@@ -57,8 +57,8 @@
 
     <div class="popup-container popup_type_add-person">
         <div class="popup">
-            <button class="popup__close">X</button>
-            <form class="popup__form">
+            <button class="popup__close"></button>
+            <form class="popup__form popup__form_type_add-person">
                 <h2 class="popup__header">הוספת משתתף לשיחה:</h2>
                 <div class="popup__input-field">
                     <lable class="popup__text">שם:
@@ -72,16 +72,30 @@
 
     <div class="popup-container popup_type_send-email">
         <div class="popup">
-            <button class="popup__close">X</button>
-            <form class="popup__form">
+            <button class="popup__close popup__close_type_send-email"></button>
+            <form class="popup__form popup__form_type_email">
                 <h2 class="popup__header">שליחת שיחה לדוא"ל:</h2>
                 <div class="popup__input-field">
                     <lable class="popup__text">דוא"ל:</lable>
-                    <input class="popup__input popup__input_type_email" type="email">
+                    <input class="popup__input popup__input_type_email" type="email" required>
+                </div>
+                <div class="popup__input-field">
+                    <lable class="popup__text">נושא:</lable>
+                    <input class="popup__input popup__input_type_subject" type="text" required>
                 </div>
                 
                 <button class="popup__button popup__button_type_send-email" type="submit">שלח שיחה</button>
             </form>
+        </div>
+    </div>
+
+    <div class="popup-container popup_type_information">
+        <div class="popup">
+            <button class="popup__close popup__close_type_info"></button>
+            <h2 class="popup__header">מידע על יישום הקלדה</h2>
+            <div class="popup__info">
+                <p>אודות יישום ההקלדה.</p>
+            </div>
         </div>
     </div>
 

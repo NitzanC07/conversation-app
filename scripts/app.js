@@ -34,7 +34,6 @@ SendMessageButton.addEventListener('click', () => {
     message.value = '';
     author.textContent = 'דובר:'
     conversationData.push(messageData);
-    console.log(conversationData);
 })
 
 /** בחירה מרובה של פריטים ששייכים לאותה מחלקה במסמך
@@ -61,20 +60,21 @@ allSpeakers();
  * popup__close
  * שלב 2 - הוספת המשתמש החדש לרשימת המשתתפים
  */
-const popup = document.querySelector('.popup-container');
+const popupAddPerson = document.querySelector('.popup_type_add-person');
 const participents = document.querySelector('.participents__names');
 const buttonAddOne = document.querySelector('.participents__add-one');
 const closeButton = document.querySelector('.popup__close');
 
-const addParticipentForm = document.querySelector('.popup__form');
+const addParticipentForm = document.querySelector('.popup__form_type_add-person');
 const participentInput = document.querySelector('.popup__input_type_participent');
 const participentList = document.querySelector('.participents__names');
 
 buttonAddOne.addEventListener('click', () => {
-    popup.classList.add('popup-container_active');
+    popupAddPerson.classList.add('popup-container_active');
     participentInput.focus()
     closeButton.addEventListener('click', () => {
-        popup.classList.remove('popup-container_active');
+        popupAddPerson.classList.remove('popup-container_active');
+        participentInput.value = '';
     })
 })
 
@@ -84,10 +84,56 @@ addParticipentForm.addEventListener('submit', (e) => {
     const participentTemplate = `<p class="participents__name">${name}</p>` 
     participentList.innerHTML += participentTemplate;
     allSpeakers();
-    popup.classList.remove('popup-container_active')
+    popupAddPerson.classList.remove('popup-container_active');
+    participentInput.value = '';
 });
 
 
+/** הפעלת פופאפ לכפתור האי-מייל */
+const popupEmail = document.querySelector('.popup_type_send-email');
+const buttonEmail = document.querySelector('.chat-container__button__send-email');
+const formSendEmail = document.querySelector('.popup__form_type_email');
+const inputSendEmail = document.querySelector('.popup__input_type_email');
+const inputSubjectEmail = document.querySelector('.popup__input_type_subject');
+const closeButtonSendEmail = document.querySelector('.popup__close_type_send-email');
+
+buttonEmail.addEventListener('click', () => {
+    popupEmail.classList.add('popup-container_active');
+    inputSendEmail.focus()
+    closeButtonSendEmail.addEventListener('click', () => {
+        popupEmail.classList.remove('popup-container_active');
+        inputSendEmail.value = '';
+        inputSubjectEmail.value = '';
+    })
+})
+
+formSendEmail.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = inputSendEmail.value;
+    const emailSubject = inputSubjectEmail.value;
+    let lastConversation = '';
+    conversationData.forEach(message => {
+        lastConversation += `${message.author}: ${message.message}%0D%0A`
+    })
+    console.log(lastConversation);
+    window.open(`mailto:${email}?subject=${emailSubject}&body=${lastConversation}`);
+    popupEmail.classList.remove('popup-container_active')
+    inputSendEmail.value = '';
+    inputSubjectEmail.value = '';
+});
+
+
+/** הפעלת פופאפ לכפתור האי-מייל */
+const popupInfo = document.querySelector('.popup_type_information');
+const closeButtonInfo = document.querySelector('.popup__close_type_info');
+const buttonInformation = document.querySelector('.chat-container__button__information');
+
+buttonInformation.addEventListener('click', () => {
+    popupInfo.classList.add('popup-container_active');
+    closeButtonInfo.addEventListener('click', () => {
+        popupInfo.classList.remove('popup-container_active');
+    })
+})
 
 /** להפעיל מקש אנטר */
 

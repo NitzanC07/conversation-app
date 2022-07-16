@@ -1,14 +1,17 @@
 .popup__close {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border: 0;
-    background-color: transparent;
+    background-color:transparent;
+    background-image: url('../../../images/close-icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     color: #000;
     cursor: pointer;
     position: absolute;
-        left: 1px;
-        top: 1px;
+        left: 7px;
+        top: 7px;
 }
 .popup__close:hover {
-    color: #aaa;
+    transform: rotate(90deg) ;
 }
