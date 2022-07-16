@@ -5,10 +5,6 @@
     cursor: pointer;
     font-size: 20px;
     background-color: #fff;
-    background-image: url('../../../images/email-icon.svg');
-    background-position: center;
-    background-size: 50px;
-    background-repeat: no-repeat;
     border: 0px solid #000;
     border-radius: 10px;
     overflow: hidden;
@@ -19,5 +15,5 @@
 }
 
 .chat-container__button:hover {
-    background-color: #ddd;
+    background-color: #777;
 }

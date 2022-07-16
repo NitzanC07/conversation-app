@@ -21,6 +21,9 @@
 @import url('./styles/speaker/__message/speaker__message.css');
 @import url('./styles/chat-container/__conversation-field/chat-container__conversation-field.css');
 @import url('./styles/chat-container/__message/chat-container__message.css');
+@import url('./styles/chat-container/__button/__send-email/chat-container__button__send-email.css');
+@import url('./styles/chat-container/__button/__information/chat-container__button__information.css');
+@import url('./styles/chat-container/__button/__visibility/chat-container__button__visibilty.css');
 @import url('./styles/popup/popup.css');
 @import url('./styles/popup/popup-container.css');
 @import url('./styles/popup/_active/popup-container_active.css');

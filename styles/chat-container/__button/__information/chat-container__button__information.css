@@ -1,0 +1,6 @@
+.chat-container__button__information {
+    background-image: url('../../../../images/info-icon.svg');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}

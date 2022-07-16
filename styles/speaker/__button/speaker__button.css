@@ -1,6 +1,7 @@
 .speaker__button {
-    width: 180px;
-    height: 55px;
+    width: 200px;
+    height: 50px;
+    margin: 0;
     cursor: pointer;
     font-size: 20px;
     background-color: rgb(255, 255, 255);

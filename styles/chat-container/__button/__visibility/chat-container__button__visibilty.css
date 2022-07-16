@@ -1,0 +1,6 @@
+.chat-container__button__visibilty {
+    background-image: url('../../../../images/visibility-icon.svg');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
