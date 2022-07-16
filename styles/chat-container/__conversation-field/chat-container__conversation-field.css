@@ -1,0 +1,9 @@
+.chat-container__conversation-field {
+    height: 85%;
+    overflow-y: scroll;
+    margin: 0 15px 0 0;
+    padding: 0;
+    font-family: 'yehuda', 'Gveret-levin', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}

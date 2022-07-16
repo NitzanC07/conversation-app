@@ -1,0 +1,19 @@
+.participents__button {
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #fff;
+    background-image: url('../../../images/plus-icon.svg');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border: 0px solid #000;
+    border-radius: 35px;
+    box-shadow: 4px 4px 5px #555;
+    overflow: hidden;
+}
+.participents__button:hover {
+    background-color: #ddd;
+    box-shadow: 0px 0px 5px #555;
+}

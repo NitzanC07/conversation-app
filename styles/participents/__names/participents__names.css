@@ -1,0 +1,6 @@
+.participents__names {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 85%;
+}

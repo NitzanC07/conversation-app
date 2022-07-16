@@ -1,0 +1,11 @@
+.footer {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 5px 0;
+}

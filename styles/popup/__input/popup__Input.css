@@ -1,0 +1,12 @@
+.popup__input {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-bottom: 1px solid #000;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: 'yehuda', Arial, Helvetica, sans-serif;
+}
+.popup__input:focus {
+    outline: 0;
+}

@@ -1,0 +1,16 @@
+
+.speaker__message {
+    width: 100%;
+    margin: 0 5px 0 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-bottom: 1px solid #000;
+    font-family: 'yehuda', 'Gveret-levin', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.speaker__message:focus {
+    outline: 0;
+}

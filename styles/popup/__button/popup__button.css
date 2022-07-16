@@ -1,0 +1,19 @@
+.popup__button {
+    margin: 25px auto;
+    padding: 5px 10px;
+    width: 100px;
+    cursor: pointer;
+    background-color: rgb(145, 145, 145);
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px #555;
+    font-family: 'yehuda', 'Gveret-levin', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.popup__button:hover {
+    background-color: #999;
+    box-shadow: 0px 0px 5px #555;
+}

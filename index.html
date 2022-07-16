@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>יישום הקלדה</title>
+</head>
+<body class="page">
+    <header class="header">
+        <p class="header__title">כותרת</p>
+        <p class="header__title header__time">שעה</p>
+    </header>
+    <main class="main">
+
+        <section class="participents">
+            <h2 class="participents__title">משתתפים בשיחה:</h2>
+            <div class="participents__names">
+                
+            </div>
+            <button class="participents__button participents__add-one">
+                
+            </button>
+        </section>
+
+        <section class="speaker">
+            <div class="speaker__message-field">
+                <h2 class="speaker__name">דובר:</h2>
+                <input class="speaker__message" type="text" placeholder="הקלד/י כאן מה שאת/ה רוצה לומר לומר..." value="">
+            </div>
+            <button class="speaker__button speaker__send"></button>
+        </section>
+
+        <section class="chat-container">
+            <h2 class="chat-container__title">חלון שיחה:</h2>
+            <div class="chat-container__conversation-field">
+                
+            </div>
+            <div class="chat-container__nav">
+                <button class="chat-container__button chat-container__send-email"></button>
+            </div>
+            
+        </section>
+
+        <template id="message">
+            <p class="chat-container__message"></p>
+        </template>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Developed by Nitzan Cohen &#169; 2022</p>
+        <p class="footer__text">Beta version</p>
+    </footer>
+
+    <div class="popup-container popup_type_add-person">
+        <div class="popup">
+            <button class="popup__close">X</button>
+            <form class="popup__form">
+                <h2 class="popup__header">הוספת משתתף לשיחה:</h2>
+                <div class="popup__input-field">
+                    <lable class="popup__text">שם:
+                        <input class="popup__input popup__input_type_participent" type="text">
+                    </lable>
+                </div>                
+                <button class="popup__button" type="submit">צרף לשיחה</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup-container popup_type_send-email">
+        <div class="popup">
+            <button class="popup__close">X</button>
+            <form class="popup__form">
+                <h2 class="popup__header">שליחת שיחה לדוא"ל:</h2>
+                <div class="popup__input-field">
+                    <lable class="popup__text">דוא"ל:</lable>
+                    <input class="popup__input popup__input_type_email" type="email">
+                </div>
+                
+                <button class="popup__button popup__button_type_send-email" type="submit">שלח שיחה</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+</html>

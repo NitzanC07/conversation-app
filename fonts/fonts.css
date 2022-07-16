@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gveret-levin';
+    src: url('./GveretLevinAlefAlefAlef/web/GveretLevinAlefAlefAlef-Regular.woff2') format("woff2");
+}
+
+@font-face {
+    font-family: 'Yehuda';
+    src: url('./yehuda/yehuda/yehudaclm-light-webfont.woff') format('woff2');
+}

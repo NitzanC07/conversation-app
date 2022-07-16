@@ -1,0 +1,20 @@
+.speaker__button {
+    width: 180px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    background-image: url('../../../images/talk.svg');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    border: 0px solid #000;
+    border-radius: 35px;
+    box-shadow: 4px 4px 5px #555;
+    overflow: hidden;
+}
+
+.speaker__button:hover {
+    background-color: #ddd;
+    box-shadow: 0px 0px 5px #555;
+}

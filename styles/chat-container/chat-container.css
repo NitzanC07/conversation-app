@@ -1,0 +1,14 @@
+.chat-container {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    height: 100%;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+}

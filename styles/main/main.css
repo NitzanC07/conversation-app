@@ -1,0 +1,13 @@
+.main {
+    width: 100%;
+    min-width: 600px;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "participents speaker"
+                         "participents main"
+                         "participents main";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+    margin: 0;
+    padding: 0;
+}
