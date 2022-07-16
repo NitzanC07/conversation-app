@@ -46,6 +46,7 @@ function allSpeakers() {
     speakers.forEach(speaker => {
         speaker.addEventListener('click', () => {
             author.textContent = speaker.textContent + ':';
+            message.focus();
         });
     });       
 }
@@ -71,12 +72,12 @@ const participentList = document.querySelector('.participents__names');
 
 buttonAddOne.addEventListener('click', () => {
     popup.classList.add('popup-container_active');
+    participentInput.focus()
     closeButton.addEventListener('click', () => {
         popup.classList.remove('popup-container_active');
     })
 })
 
-console.log(participentInput);
 addParticipentForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = participentInput.value;
