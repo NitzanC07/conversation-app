@@ -1,6 +1,6 @@
 .speaker__message-field {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
-    width: 94%;
+    width: 95%;
 }

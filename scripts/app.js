@@ -71,7 +71,7 @@ const participentList = document.querySelector('.participents__names');
 
 buttonAddOne.addEventListener('click', () => {
     popupAddPerson.classList.add('popup-container_active');
-    participentInput.focus()
+    participentInput.focus();
     closeButton.addEventListener('click', () => {
         popupAddPerson.classList.remove('popup-container_active');
         participentInput.value = '';
@@ -99,7 +99,7 @@ const closeButtonSendEmail = document.querySelector('.popup__close_type_send-ema
 
 buttonEmail.addEventListener('click', () => {
     popupEmail.classList.add('popup-container_active');
-    inputSendEmail.focus()
+    inputSendEmail.focus();
     closeButtonSendEmail.addEventListener('click', () => {
         popupEmail.classList.remove('popup-container_active');
         inputSendEmail.value = '';
@@ -115,6 +115,7 @@ formSendEmail.addEventListener('submit', (e) => {
     conversationData.forEach(message => {
         lastConversation += `${message.author}: ${message.message}%0D%0A`
     })
+    lastConversation = lastConversation.replace(/[?]/g, '');
     console.log(lastConversation);
     window.open(`mailto:${email}?subject=${emailSubject}&body=${lastConversation}`);
     popupEmail.classList.remove('popup-container_active')
@@ -136,4 +137,3 @@ buttonInformation.addEventListener('click', () => {
 })
 
 /** להפעיל מקש אנטר */
-

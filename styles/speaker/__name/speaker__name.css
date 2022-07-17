@@ -1,6 +1,9 @@
 .speaker__name {
-    font-family: 'yehuda', 'Gveret-levin', Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', 'Yehuda', 'Gveret-levin', Arial;
     font-size: 24px;
     line-height: 28px;
     width: fit-content;
+    flex-wrap: initial;
+    margin: 0;
+    padding: 0;
 }

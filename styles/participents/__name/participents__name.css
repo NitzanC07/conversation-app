@@ -6,9 +6,10 @@
     border-radius: 10px;
     box-shadow: 3px 3px 5px #555;
     cursor: pointer;
-    font-family: 'yehuda', 'Gveret-levin', Arial, Helvetica, sans-serif;
+    font-family: 'Rubik' , 'Yehuda', 'Gveret-levin', Arial;
     font-size: 24px;
     line-height: 28px;
+    text-align: center;
 }
 
 .participents__name:hover {

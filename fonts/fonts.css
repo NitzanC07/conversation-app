@@ -7,3 +7,15 @@
     font-family: 'Yehuda';
     src: url('./yehuda/yehuda/yehudaclm-light-webfont.woff') format('woff2');
 }
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 400;
+    src: url('./Rubik/static/Rubik-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik-bold';
+    font-weight: 900;
+    src: url('./Rubik/static/Rubik-Bold.ttf');
+}

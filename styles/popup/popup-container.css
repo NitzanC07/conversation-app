@@ -1,5 +1,7 @@
 .popup-container {
     visibility: hidden;
+    transition: 0.3s linear;
+    opacity: 0;
     width: 100vw;
     min-width: 510px;
     height: 100vh;
