@@ -113,7 +113,7 @@ formSendEmail.addEventListener('submit', (e) => {
     const emailSubject = inputSubjectEmail.value;
     let lastConversation = '';
     conversationData.forEach(message => {
-        lastConversation += `${message.author}: ${message.message}%0D%0A`
+        lastConversation += `${message.author} (${message.time}): ${message.message}%0D%0A`
     })
     lastConversation = lastConversation.replace(/[?]/g, '');
     window.open(`mailto:${email}?subject=${emailSubject}&body=${lastConversation}`);

@@ -1,5 +1,5 @@
 .popup-container_active {
     visibility: visible;
-    transition: 0.3s linear;
+    /* transition: 0.1s linear; */
     opacity: 1;
 }
