@@ -116,7 +116,6 @@ formSendEmail.addEventListener('submit', (e) => {
         lastConversation += `${message.author}: ${message.message}%0D%0A`
     })
     lastConversation = lastConversation.replace(/[?]/g, '');
-    console.log(lastConversation);
     window.open(`mailto:${email}?subject=${emailSubject}&body=${lastConversation}`);
     popupEmail.classList.remove('popup-container_active')
     inputSendEmail.value = '';
