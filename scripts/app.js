@@ -136,3 +136,17 @@ buttonInformation.addEventListener('click', () => {
 })
 
 /** להפעיל מקש אנטר */
+
+/** עבודה עם תבנית
+ * Template
+ * מושגים חדשים
+ * Tamplate, DOM tree (Document Object Model), id, 
+ * בוחרים את התבנית המתאימה
+ * const userTemplate = document.querySelector('#template-is').content;
+ * ואז הופכים את תוכן התבנית לרכיב בעמוד 
+ * const userElement = userTemplate.querySelector('.user').cloneNode(true);
+ * ואז מוסיפים תוכן שרוצים לתוך התבנית
+ * userElement.querySelector(".chat-container__message").textContent = "שלום";
+ * ומוסיפים את הרכיב להשתלשלות המסמך
+ * chatContainer.append(userElement); 
+ */
