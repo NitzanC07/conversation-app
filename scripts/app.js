@@ -23,18 +23,35 @@ const whatTime = new Date();
 clock.textContent = whatTime.toLocaleDateString();
 
 /** יצירת פונקציית הקשבה של הכפתור ללחיצה של המשתמש */
-SendMessageButton.addEventListener('click', () => {
+const newMessageTemplate = document.querySelector('#message').content;
+
+function handleSendMesage() {
     const messageData = {
         message: message.value, 
         author: author.textContent.slice(0, -1),
         time: timeNow()
     }
-    const messageTemplate = `<p>${messageData.author}: ${messageData.message}</p>`;
-    chatContainer.innerHTML += messageTemplate;
+    const userMessage =  newMessageTemplate.querySelector('.chat-container__message').cloneNode(true);
+    userMessage.textContent = `${messageData.author}: ${messageData.message}`;
+    chatContainer.prepend(userMessage);
     message.value = '';
     author.textContent = 'דובר:'
     conversationData.push(messageData);
+    console.log(conversationData);
+}
+
+SendMessageButton.addEventListener('click', () => {
+    handleSendMesage();
 })
+
+/** להפעיל מקש אנטר */
+document.addEventListener('keyup', function(event){
+    if (event.key === "Enter") {
+       handleSendMesage();
+    };
+} );
+
+
 
 /** בחירה מרובה של פריטים ששייכים לאותה מחלקה במסמך
  * querySelectorAll
@@ -134,19 +151,3 @@ buttonInformation.addEventListener('click', () => {
         popupInfo.classList.remove('popup-container_active');
     })
 })
-
-/** להפעיל מקש אנטר */
-
-/** עבודה עם תבנית
- * Template
- * מושגים חדשים
- * Tamplate, DOM tree (Document Object Model), id, 
- * בוחרים את התבנית המתאימה
- * const userTemplate = document.querySelector('#template-is').content;
- * ואז הופכים את תוכן התבנית לרכיב בעמוד 
- * const userElement = userTemplate.querySelector('.user').cloneNode(true);
- * ואז מוסיפים תוכן שרוצים לתוך התבנית
- * userElement.querySelector(".chat-container__message").textContent = "שלום";
- * ומוסיפים את הרכיב להשתלשלות המסמך
- * chatContainer.append(userElement); 
- */
