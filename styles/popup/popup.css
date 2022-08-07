@@ -1,6 +1,6 @@
 .popup {
-    width: 30%;
-    min-width: 200px;
+    width: 60%;
+    /* min-width: 230px; */
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -8,6 +8,6 @@
     border-radius: 15px;
     box-shadow: 4px 4px 5px #999;
     position: relative;
-        top: 10%;
-        right: 30%;
+        top: 65px;
+        right: 20%;
 }

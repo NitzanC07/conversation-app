@@ -1,6 +1,6 @@
 .main {
     width: 100%;
-    min-width: 600px;
+    min-width: 425px;
     height: 100%;
     display: grid;
     grid-template-areas: "participents speaker"
@@ -10,4 +10,15 @@
     grid-template-rows: 1fr 6fr;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        grid-template-areas: "participents"
+                             "speaker"
+                             "main";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 6fr;
+    }    
+
 }

@@ -4,3 +4,10 @@
     flex-wrap: wrap;
     height: 83%;
 }
+
+@media screen and (max-width: 600px) {
+    .participents__names {
+        flex-direction: row;
+        height: fit-content;
+    }
+}
