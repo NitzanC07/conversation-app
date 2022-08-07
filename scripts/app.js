@@ -151,3 +151,15 @@ buttonInformation.addEventListener('click', () => {
         popupInfo.classList.remove('popup-container_active');
     })
 })
+
+/** הפעלת פופאפ לכפתור האי-מייל */
+const popupGuide = document.querySelector('.popup_type_guide');
+const closeButtonGuide = document.querySelector('.popup__close_type_guide');
+const buttonGuide = document.querySelector('.chat-container__button__guide');
+
+buttonGuide.addEventListener('click', () => {
+    popupGuide.classList.add('popup-container_active');
+    closeButtonGuide.addEventListener('click', () => {
+        popupGuide.classList.remove('popup-container_active');
+    })
+})

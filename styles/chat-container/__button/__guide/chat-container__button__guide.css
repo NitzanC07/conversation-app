@@ -1,0 +1,6 @@
+.chat-container__button__guide {
+    background-image: url('../../../../images/guide-icon.svg');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
