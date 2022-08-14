@@ -31,13 +31,15 @@ function handleSendMesage() {
         author: author.textContent.slice(0, -1),
         time: timeNow()
     }
+    console.log(messageData);
     const userMessage =  newMessageTemplate.querySelector('.chat-container__message').cloneNode(true);
-    userMessage.textContent = `${messageData.author}: ${messageData.message}`;
-    chatContainer.prepend(userMessage);
-    message.value = '';
-    author.textContent = 'דובר:'
-    conversationData.push(messageData);
-    console.log(conversationData);
+    if (messageData.message !== '' && messageData.author !== 'דובר') {
+        userMessage.textContent = `${messageData.author}: ${messageData.message}`;
+        chatContainer.append(userMessage);
+        message.value = '';
+        author.textContent = 'דובר:'
+        conversationData.push(messageData);
+    }
 }
 
 SendMessageButton.addEventListener('click', () => {
