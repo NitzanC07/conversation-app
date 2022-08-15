@@ -4,6 +4,7 @@
     cursor: pointer;
     font-size: 20px;
     background-color: rgba(194, 253, 255, 1);
+    background-color: rgba(221, 255, 194, 1);
     background-image: url('../../../images/add-person-icon.svg');
     background-position: center;
     background-size: 50px;
@@ -15,6 +16,7 @@
 }
 .participents__button:hover {
     background-color: rgba(194, 253, 255, 0.7);
+    background-color: rgba(221, 255, 194, 0.7);
     box-shadow: 0px 0px 5px #555;
 }
 
