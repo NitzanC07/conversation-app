@@ -4,7 +4,7 @@
     margin: 0;
     cursor: pointer;
     font-size: 20px;
-    background-color: rgb(192, 253, 205);
+    background-color: rgba(194, 253, 255, 1);
     background-image: url('../../../images/talk.svg');
     background-position: center;
     background-size: 50px;
@@ -16,6 +16,6 @@
 }
 
 .speaker__button:hover {
-    background-color: #ddd;
+    background-color: rgba(194, 253, 255, 0.7);
     box-shadow: 0px 0px 5px #555;
 }

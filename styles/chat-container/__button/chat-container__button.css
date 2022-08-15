@@ -4,7 +4,7 @@
     margin: 0 7px 0 0;
     cursor: pointer;
     font-size: 20px;
-    background-color: rgb(192, 253, 205);
+    background-color: rgba(194, 253, 255, 1);
     border: 0px solid #000;
     border-radius: 10px;
     overflow: hidden;
@@ -15,5 +15,5 @@
 }
 
 .chat-container__button:hover {
-    background-color: #777;
+    background-color: rgba(194, 253, 255, 0.7);
 }

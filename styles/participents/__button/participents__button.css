@@ -3,7 +3,7 @@
     height: 70px;
     cursor: pointer;
     font-size: 20px;
-    background-color: rgb(0, 71, 104);
+    background-color: rgba(194, 253, 255, 1);
     background-image: url('../../../images/add-person-icon.svg');
     background-position: center;
     background-size: 50px;
@@ -14,7 +14,7 @@
     overflow: hidden;
 }
 .participents__button:hover {
-    background-color: #ddd;
+    background-color: rgba(194, 253, 255, 0.7);
     box-shadow: 0px 0px 5px #555;
 }
 
